@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap-4.0.0/css/bootstrap.min.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+		<div class = 'pane'>
+		    <h1>{{ category.name }}</h1>
+        {% for item in items %}
+
+				<a href = "{{url_for('showItem', category = category.name, item_name = item.name)}}"> <p>{{item.name}}</p></a>
+				<a href = "{{url_for('editCatItem', category = category.name, item_name = item.name)}}"> <p>edit</p></a>
+				<a href = "{{url_for('deleteCatItem', category = category.name, item_name = item.name)}}"> <p>delete</p></a>
+
+        <br />
+
+
+        {% endfor %}
+				<br />
+				<a href = "{{url_for('newCatItem', category = category.name)}}"> <p>Create new item</p></a>
+
+    </div>
+	</body>
+
+</html>

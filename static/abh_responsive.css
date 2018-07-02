@@ -1,0 +1,50 @@
+
+@media screen and (max-width: 450px){
+  h1{
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  h2{
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  h3{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  h4{
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  h5{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  body {
+    font-family: Roboto;
+    font-size: 12px;
+  }
+  .nav__item {
+    text-align: center;
+    line-height: 20px;
+    padding: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .header__logo{
+    width: 50px;
+    height: 45px;
+    }
+
+    .theme {
+      width: 100%;
+      position: relative;
+      background-image: url("../images/theme_pic_responsive.jpg");
+      background-size: cover;
+      min-height: 300px;
+    }
+
+
+}

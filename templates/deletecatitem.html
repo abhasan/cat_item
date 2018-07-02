@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABH Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="/static/bootstrap-4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/abh.css">
+  <link rel="stylesheet" type="text/css" href="/static/abh_responsive.css">
+
+</head>
+<body>
+  <div class="container">
+    <header class="header row">
+      <div class="header__inner">
+        <img class="img-fluid img-responsive col-5 col-xg3" src="/static/images/sporting_goods_store.jpg" alt="iconic view of a cityscape">
+        <div class="header__title text_align_right col-7 col-xg9">
+          {% if session['username'] %}
+          <h1 class="">{{session['username']}}</h1>
+          <a class="id_email" href="mailto:someone@example.com?Subject=Hello%20again" target="#">{{session['email']}}</a>
+          <br /><a href="/gdisconnect">Logout</a>
+          {% else %}
+          <br /><a href="/login">Login</a>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+    <nav id="nav_bar" class="nav__bar row">
+      <ul class="nav__list">
+        <li class="nav__item col-4">
+          <a href="/">Home</a>
+        </li>
+      </ul>
+    </nav>
+		<main>
+			<h1> Are you sure you want to delete {{item.name}}? </h1>
+
+			<form action="#" method = 'post'>
+
+			<input type='submit', value = 'Delete'>
+
+			</form>
+
+			<a href = '#'> Cancel </a>
+
+    </main>
+    <br />
+    <br />
+    <footer class="footer text_align_right">
+      © 2018. Made for <a href="https://www.udacity.com/nanodegree">Udacity</a> nano-degree Program
+    </footer>
+  </div>
+</body>
+</html>

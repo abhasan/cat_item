@@ -1,0 +1,148 @@
+/* overloaded classes of bootstrap */
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 18px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6,a {
+  margin: 0;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+.container1 {
+  max-width: 900px;
+  padding-left: 5px;
+  margin: auto;
+}
+.header {
+  border-bottom: 3px solid #7d97ad;
+  padding: 10px;
+  display: grid;
+}
+.header__inner {
+}
+.header__logo {
+  display: inline-block;
+  }
+
+  .id_email {
+    font-size: 14px;
+  }
+  .header__title {
+    float: right;
+    font-weight: 300;
+    display: inline-block;
+
+  }
+
+  .nav__bar {
+    clear: both;
+    border-bottom: 0.1px solid #EFEFEF;
+  }
+  .nav__item {
+    width: 30%;
+    text-align: center;
+    line-height: 24px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .nav__list {
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+
+  }
+  .main {
+    display: inline;
+  }
+  .theme {
+    width: 100%;
+    position: relative;
+    background-image: url("../images/theme_pic.png");
+    background-size: cover;
+    min-height: 500px;
+  }
+
+  .theme article {
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    padding: 1em;
+  }
+
+
+
+/*  bottom div row of list*/
+
+  .bottom_div_row {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+
+
+  }
+  .bottom_div_item {
+    width: 30%;
+    background-color: #EFEFEF;
+    padding: 10px;
+    padding-right: 10px;
+    margin: auto;
+    float: left;
+    border: 1px solid #7d97ad;
+    overflow: auto;
+  }
+  .bottom_row_image {
+    width: 100%;
+    margin: auto;
+  }
+
+  /*
+  Footer decorators
+  */
+  .footer {
+    border-top: 1px solid #7d97ad;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+/*
+    GENERAL CSS decorator CLASSES  which can be used
+    for any component
+*/
+  .link_text {
+    color: #000000;
+  }
+  .float__right {
+    float: right;
+  }
+  .text_align_right {
+    text-align: right;
+  }
+  .text_align_left {
+    text-align: left;
+  }
