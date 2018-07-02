@@ -68,3 +68,8 @@ print("creating the database")
 engine = create_engine('sqlite:///sportinggood_users.db')
 Base.metadata.create_all(engine)
 print("successfully created the database")
+class create_db():
+    def new_db(self):
+        engine = create_engine('sqlite://sportinggood_users.db')
+        Base.metadata.create_all(engine)
+        print("successfully created the database")

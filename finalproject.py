@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, jsonify, url_for
 from flask import session as login_session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database_setup2 import Base, Category, Category_item, User
+from database_setup2 import Base, Category, Category_item, User, create_db
 import random
 import string
 from sqlalchemy.pool import StaticPool
@@ -349,5 +349,6 @@ def getUserID(email):
 
 
 if __name__ == '__main__':
+    create_db.new_db()
     app.debug = True
     app.run(host='0.0.0.0', port=8000)
