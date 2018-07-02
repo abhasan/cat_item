@@ -1,1 +1,1 @@
-web: python finalproject.py
+web: python database_setup2.py
